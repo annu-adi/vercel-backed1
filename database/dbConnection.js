@@ -5,7 +5,7 @@ import mongoose from "mongoose";
  import mongoose from "mongoose";
 
 export const dbConnection = ()=>{
-    mongoose.connect(process.env.MONGO_URI,{
+    mongoose.connect(mongodb+srv://rashmi:rashmi123@cluster0.pszpa.mongodb.net/portal?appName=Cluster0,{
        // dbName:"MERN_STCK_HOSPITAL_MANAGEMENT_SYSTEM"
        dbName:"portal"
        serverSelectionTimeoutMS:5000,
