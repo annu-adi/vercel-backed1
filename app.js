@@ -15,7 +15,7 @@ config({path:"./config/config.env"});
 
 app.use(
     cors({
-        origin:["https://vercel-fronted1.vercel.app", process.env.DASHBOARD_URL],
+        origin:["https://vercel-fronted1.vercel.app", "https://vercel-dashboard-six-lake.vercel.app"],
         methods:["GET","POST","PUT","DELETE"],
         credentials:true,
     })
