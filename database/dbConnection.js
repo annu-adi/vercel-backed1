@@ -17,7 +17,7 @@ import mongoose from "mongoose";
   //  });
 //}
 export const dbConnection=()=>{
-    mongoose.connectmongodb+srv://rashmi:rashmi123@cluster0.pszpa.mongodb.net/portal?appName=Cluster0').then(()=>{
+    mongoose.connect('mongodb+srv://rashmi:rashmi123@cluster0.pszpa.mongodb.net/portal?appName=Cluster0').then(()=>{
         console.log("Db Connected");
 
    }).catch((error)=>{
